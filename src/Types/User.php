@@ -32,7 +32,7 @@ class User extends Schema {
 	        	$volumeId = Craft::$app->getVolumes()->getVolumeByUid($uid)->id;
         }
         
-        if ($volumeId) {
+       if ($volumeId) {
             $this->addField('photo')
                 ->type($this->request->volumes()->get($volumeId));
         }
